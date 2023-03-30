@@ -27,6 +27,8 @@ sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
 sudo yum install -y jenkins
 ```
+<img src="https://user-images.githubusercontent.com/119637398/228755834-42fbc927-ca07-4e33-982c-c6ad292daf54.jpg">  
+
 - jenkins의 기본 포트는 8080이므로 변경 필요.
   - jenkins 종료
   ```
@@ -36,6 +38,8 @@ sudo yum install -y jenkins
   ```
   sudo vi /usr/lib/systemd/system/jenkins.service
   ```
+  <img src="https://user-images.githubusercontent.com/119637398/228755839-8ab78713-72e7-4e09-a01c-0090c0ead61e.jpg">  
+  
   - jenkins 실행
   ```
   sudo service jenkins start 
@@ -49,5 +53,5 @@ sudo systemctl status jenkins.service
 ```
 sudo vi /var/lib/jenkins/secrets/initialAdminPassword
 ```
-
+<img src="https://user-images.githubusercontent.com/119637398/228755837-0e2da744-34a7-46db-8414-e09886eff8ac.jpg">  
 
